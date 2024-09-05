@@ -47,12 +47,22 @@ public class Main {
                     System.out.println("źle");
                     break;
             }
-        System.out.println(switch (roznica) {
+        System.out.println(switch(roznica){
             case 0 -> "Bardzo dobrze";
             case 1 -> "Blisko";
             case 2 -> "dość blisko";
-            case 3 -> "słabo";
+            default -> "słabo";
         });
+            //zgaduje 10 razy
+        for (int i = 0; i <10 ; i++) {
+            System.out.println("podaj liczbe");
+            wpisanaLiczba = klawiatura.nextInt();
+            if (wpisanaLiczba == wylosowanaLiczba){
+                System.out.println("Gratulacje");
+                break;
+            }
+
+        }
 
     }
 }
