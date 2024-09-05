@@ -29,6 +29,24 @@ public class Main {
         else {
             System.out.println("Pudło");
         }
+        int roznica = wylosowanaLiczba>wpisanaLiczba? wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba-wylosowanaLiczba;
+        System.out.println(roznica);
+        roznica = roznica/10;//dzielenie calkowite
+
+            switch (roznica){
+                case 0:
+                    System.out.println("gj");
+                    break;
+                case 1:
+                    System.out.println("blisko");
+                    break;
+                case 2:
+                    System.out.println("moglo byc lepiej");
+                    break;
+                case 3:
+                    System.out.println("źle");
+                    break;
+            }
 
     }
 }
