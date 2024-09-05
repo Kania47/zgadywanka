@@ -63,17 +63,19 @@ public class Main {
             }
 
         }
-        System.out.println("podaj liczbe:");
-        wpisanaLiczba = klawiatura.nextInt();
-        while(wylosowanaLiczba != wpisanaLiczba){
-            if (wylosowanaLiczba>wpisanaLiczba){
-                System.out.println("Wpisano za mało");
-            } else {
-                System.out.println("wpisano za duzo");
+        do {
+            System.out.println("podaj liczbe:");
+            wpisanaLiczba = klawiatura.nextInt();
+            while (wylosowanaLiczba != wpisanaLiczba) {
+                if (wylosowanaLiczba > wpisanaLiczba) {
+                    System.out.println("Wpisano za mało");
+                } else {
+                    System.out.println("wpisano za duzo");
+                }
+
             }
-
+            while (wylosowanaLiczba != wpisanaLiczba);
+                System.out.println("Gratulacje Wygrana");
         }
-        System.out.println("Gratulacje Wygrana");
-
     }
 }
