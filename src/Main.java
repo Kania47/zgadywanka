@@ -47,6 +47,12 @@ public class Main {
                     System.out.println("źle");
                     break;
             }
+        System.out.println(switch (roznica) {
+            case 0 -> "Bardzo dobrze";
+            case 1 -> "Blisko";
+            case 2 -> "dość blisko";
+            case 3 -> "słabo";
+        });
 
     }
 }
